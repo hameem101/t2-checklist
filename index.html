@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Retail</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #f4f4f4;
+        }
+        h1 {
+        margin-bottom: 30px;
+        }
+        section {
+        background: white;
+        padding: 20px;
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+        }
+        input, select {
+        padding: 6px;
+        margin: 5px 5px 5px 0;
+        }
+        button {
+        padding: 6px 10px;
+        cursor: pointer;
+        }
+        .product-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 8px 0;
+        background: #fafafa;
+        }
+       </style>
+       
+</head>
+<body>
+    <h1> Local Retail Store </h1>
+        <section> <h2>Register Customer</h2> 
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="country" placeholder="Country">
+            <button id="registerBtn">Register</button>
+        </section>
+    
+        <section>
+            <h2>Browse Products</h2>
+                <button id="loadProductsBtn">Load All Products</button>
+                <h3>Filter by Category</h3>
+                <input type="number" id="categoryIdInput" placeholder="Enter Category ID">
+                <button id="filterBtn">Filter</button>
+                <div id="productContainer"></div>
+        </section>
+
+        <script src="app.js"></script> 
+    
+</body>
+</html>
